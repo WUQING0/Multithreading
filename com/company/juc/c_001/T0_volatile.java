@@ -25,7 +25,6 @@ import java.util.concurrent.TimeUnit;
  * volatile并不能保证多个线程共同修改running变量时所带来的不一致问题，也就是说volatile不能替代synchronized
  *
  */
-
 public class T0_volatile {
 
     /*volatile*/ boolean running = true;    //对比一下有volatile的情况下，整个程序运行结果的区别
