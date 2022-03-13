@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
  *          MESI
  *          缓存一致性协议
  *      禁止指令重排序(CPU)
- *          DCL单例
+ *          DCL单例(对象创建的步骤：1:申请内存 2.对象成员变量初始化 3.把内存内容赋值给变量)
  *          Double Check Lock
  * A B线程都用到一个变量，java默认是A线程中保留一份copy，这样如果B线程修改了该变量，则A线程未必知道
  * 使用volatile关键字，会让所有线程都会读到变量的修改值
